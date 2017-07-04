@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(opencv_test)
+project(opencv_publisher)
 
 set(CMAKE_C_FLAGS "-std=c99")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O3 -std=c++11")
@@ -38,6 +38,6 @@ set(EXT_LIBS
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/include/cv_bridge)
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
-add_executable(opencv_test_node src/opencv_test_node.cpp)
-target_link_libraries(opencv_test_node -lPerceptInPIRVS ${EXT_LIBS} ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-add_dependencies(opencv_test_node opencv_test_gencpp)
+add_executable(opencv_publisher_node src/opencv_publisher_node.cpp)
+target_link_libraries(opencv_publisher_node -lPerceptInPIRVS ${EXT_LIBS} ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(opencv_publisher_node opencv_publishet_gencpp)
