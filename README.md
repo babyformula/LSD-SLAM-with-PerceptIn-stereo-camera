@@ -22,6 +22,11 @@ catkin_make --pkg cv_bridge
 ```
 ## 2. Usage
 ```
+roscore
+```
+Then open a new terminal
+```
+source ros_opencv/devel/setup.bash
 rosrun opencv_publisher opencv_publisher_node [YOUR calibration].json
 ```
 Call on your node in ROS, and then use LSD-SLAM to subscribe the image message.<br>
