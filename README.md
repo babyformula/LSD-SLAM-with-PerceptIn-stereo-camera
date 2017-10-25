@@ -1,4 +1,7 @@
 # LSD-SLAM-with-PerceptIn-stereo-camera
+
+![image](https://github.com/babyformula/LSD-SLAM-with-PerceptIn-stereo-camera/blob/master/example.png)
+
 ## 1. Quickstart
 ### 1.1 Environment preparation
 (1) Check the requirement of running [ROS](http://www.ros.org) + [LSD-SLAM](https://github.com/tum-vision/lsd_slam), and make sure it's available to `rosmake` or `catkin_make` LSD-SLAM.<br>
